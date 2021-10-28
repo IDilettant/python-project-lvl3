@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "hexlet-code"
+version = "0.1.0"
+description = ""
+authors = ["idilettant <dedenev.dev@gmail.com>"]
+packages = [
+    { include = "page_loader" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.26.0"
+
+[tool.poetry.dev-dependencies]
+wemake-python-styleguide = "^0.15.3"
+flake8-cognitive-complexity = "^0.1.0"
+pytest = "^6.2.5"
+pytest-cov = "^3.0.0"
+mypy = "^0.910"
+requests-mock = "^1.9.3"
+pre-commit = "^2.15.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+page-loader = "page_loader.scripts.page_loader:main"
