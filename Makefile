@@ -1,14 +1,14 @@
 install:
-		poetry install
+	poetry install
 
 build:
-		poetry build
+	poetry build
 
 lint:
-		poetry run flake8 page_loader
+	poetry run flake8 page_loader
 
 package-install:
-		python3 -m pip install --user dist/*.whl
+	python3 -m pip install --user dist/*.whl
 
 test:
 	poetry run pytest
